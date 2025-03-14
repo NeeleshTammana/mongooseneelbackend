@@ -14,6 +14,9 @@ import {
 } from "../controllers/user.controller.js";
 import { verifyJWT } from "../middlewares/auth.middleware.js";
 import { upload } from "../middlewares/multer.middleware.js";
+import { refreshToken } from "../controllers/user.controller.js";
+
+router.get("/refresh-token", refreshToken);
 const router=Router()
 
 
